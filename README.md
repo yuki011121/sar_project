@@ -42,11 +42,13 @@ pip install -r requirements.txt
 sar-project/
 ├── src/
 │   └── sar_project/         # Main package directory
-│       └── ...              # Package modules
+│       └── agents/          # Agent implementations
+│       └── config/          # Configuration and settings
+│       └── knowledge/       # Knowledge base implementations
 ├── tests/                   # Test directory
-├── pyproject.toml          # Project metadata and build configuration
-├── requirements.txt        # Project dependencies
-└── .env                    # Environment configuration
+├── pyproject.toml           # Project metadata and build configuration
+├── requirements.txt         # Project dependencies
+└── .env                     # Environment configuration
 ```
 
 ## Development
