@@ -9,6 +9,9 @@ https://docs.google.com/spreadsheets/d/11rBV9CbKNeQbWbaks8TF6GO7WcSUDS_-hAoH75UE
 
 Each student or team will choose a specific role within the SAR ecosystem and implement an agent that provides decision support and automation for that role.
 
+## How to Submit
+Please submit a link to your clone of the repository to Canvas.
+
 ## Prerequisites
 
 - Python 3.8 or higher
