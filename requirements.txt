@@ -1,4 +1,0 @@
-pyautogen
-python-dotenv
-pytest
-autogen
