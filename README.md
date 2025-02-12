@@ -84,21 +84,28 @@ This project follows modern Python development practices:
 ### Assignment Questions
 
 **Q: How do I choose a role for my agent?**
-A: Review the list of SAR roles above and consider which aspects interest you most. Your agent should provide clear value to SAR operations through automation, decision support, or information processing.
+
+**A:** Review the list of SAR roles above and consider which aspects interest you most. Your agent should provide clear value to SAR operations through automation, decision support, or information processing.
 
 **Q: What capabilities should my agent have?**
-A: Your agent should handle tasks relevant to its role such as: data processing, decision making, communication with other agents, and providing actionable information to human operators.
+
+**A:** Your agent should handle tasks relevant to its role such as: data processing, decision making, communication with other agents, and providing actionable information to human operators.
 
 **Q: Can I add new dependencies?**
-A: Yes, you can add new Python packages to requirements.txt as needed for your implementation.
+
+**A:** Yes, you can add new Python packages to requirements.txt as needed for your implementation.
+
 
 ### Technical Questions
 
 **Q: Why am I getting API key errors?**
-A: Ensure you've properly set up your .env file and obtained valid API keys from the services listed above.
+
+**A:** Ensure you've properly set up your .env file and obtained valid API keys from the services listed above.
 
 **Q: How do I test my agent?**
-A: Use the provided test framework in the tests/ directory. Write tests that verify your agent's core functionality.
+
+**A:** Use the provided test framework in the tests/ directory. Write tests that verify your agent's core functionality.
 
 **Q: Can I use external libraries for my agent?**
-A: Yes, you can use external libraries as long as they are compatible.
+
+**A:** Yes, you can use external libraries as long as they are compatible.
