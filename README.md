@@ -46,13 +46,25 @@ pip install -e .
 ```
 
 4. Configure environment variables:
+
+#### OpenAI:
 - Obtain required API keys:
   1. OpenAI API key: Sign up at https://platform.openai.com/signup
 - Update your `.env` file with the following:
     ```
     OPENAI_API_KEY=your_openai_api_key_here
     ```
-- Make sure to keep your `.env` file private and never commit it to version control.
+#### Google Gemini:
+- Obtain required API keys:
+  1. ``` pip install google-generativeai ```
+  2. ``` import google.generativeai as genai ```
+  3. Google Gemini API Key: Obtain at https://aistudio.google.com/apikey
+- Configure with the following:
+  ```
+  genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+  ```
+
+Make sure to keep your `.env` file private and never commit it to version control.
 
 ## Project Structure
 
