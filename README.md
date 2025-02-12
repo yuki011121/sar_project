@@ -10,7 +10,7 @@ https://docs.google.com/spreadsheets/d/11rBV9CbKNeQbWbaks8TF6GO7WcSUDS_-hAoH75UE
 Each student or team will choose a specific role within the SAR ecosystem and implement an agent that provides decision support and automation for that role.
 
 ## How to Submit
-Please submit a link to your clone of the repository to Canvas.
+Please submit a link to your clone of the repository to Canvas. 
 
 ## Prerequisites
 
@@ -29,8 +29,8 @@ cd sar-project
 2. Set up Python environment:
 ```bash
 # Using pyenv (recommended)
-pyenv install 3.8.0  # or your preferred version
-pyenv local 3.8.0
+pyenv install 3.9.6  # or your preferred version
+pyenv local 3.9.6
 
 # Create and activate virtual environment
 python -m venv .venv
@@ -42,6 +42,7 @@ source .venv/bin/activate  # On Unix/macOS
 3. Install dependencies:
 ```bash
 pip install -r requirements.txt
+pip install -e .
 ```
 
 4. Configure environment variables:
