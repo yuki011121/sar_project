@@ -52,7 +52,7 @@ from sar_project.agents.clue_meister_agent import ClueMeisterAgent
 agent = ClueMeisterAgent()
 agent.add_clue("Footprints found near riverbank")
 print(agent.get_sorted_clues())
-
+---
 
 ```python
 from sar_project.agents.clue_meister_agent import ClueMeisterAgent
