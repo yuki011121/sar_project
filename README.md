@@ -36,6 +36,14 @@
 
 ---
 
+
+## Installation & Setup
+
+1. **Clone or fork** this repository and navigate to the project directory:
+   ```bash
+   git clone https://github.com/yourname/sar_project.git
+   cd sar_project
+
 ## Example Usage
 
 ```python
@@ -44,3 +52,26 @@ from sar_project.agents.clue_meister_agent import ClueMeisterAgent
 agent = ClueMeisterAgent()
 agent.add_clue("Footprints found near riverbank")
 print(agent.get_sorted_clues())
+
+
+```python
+from sar_project.agents.clue_meister_agent import ClueMeisterAgent
+
+agent = ClueMeisterAgent()
+
+# Add clues
+agent.add_clue("Footprints found near riverbank")
+agent.add_clue("Bloodstains discovered in the forest")
+
+# Get clues sorted by priority
+sorted_clues = agent.get_sorted_clues()
+print("Sorted Clues:", sorted_clues)
+
+# Analyze patterns in existing clues
+patterns = agent.analyze_patterns()
+print("Common Patterns:", patterns)
+
+# Find the most related clue to a new observation
+related = agent.find_related_clues("Suspicious clothing found near river")
+print("Most Related Clue:", related)
+
