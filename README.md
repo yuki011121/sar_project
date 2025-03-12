@@ -39,20 +39,15 @@
 
 ## Installation & Setup
 
-1. **Clone or fork** this repository and navigate to the project directory:
+**Clone or fork** this repository and navigate to the project directory:
    ```bash
    git clone https://github.com/yourname/sar_project.git
    cd sar_project
-
+```
+   
 ## Example Usage
 
-```python
-from sar_project.agents.clue_meister_agent import ClueMeisterAgent
-
-agent = ClueMeisterAgent()
-agent.add_clue("Footprints found near riverbank")
-print(agent.get_sorted_clues())
----
+### Basic Code Example
 
 ```python
 from sar_project.agents.clue_meister_agent import ClueMeisterAgent
@@ -74,4 +69,29 @@ print("Common Patterns:", patterns)
 # Find the most related clue to a new observation
 related = agent.find_related_clues("Suspicious clothing found near river")
 print("Most Related Clue:", related)
+```
+### Process Request Interface
+
+```python
+request_add = {
+    "add_clue": True,
+    "clue_text": "Shouting heard near mountain trail"
+}
+response_add = agent.process_request(request_add)
+print("Add Clue Response:", response_add)
+
+request_get = {"get_clues": True}
+response_get = agent.process_request(request_get)
+print("Get Clues Response:", response_get)
+
+request_patterns = {"analyze_patterns": True}
+response_patterns = agent.process_request(request_patterns)
+print("Analyze Patterns Response:", response_patterns)
+```
+
+### Running Tests
+```python
+pytest tests/test_clue_meister_agent.py
+```
+
 
