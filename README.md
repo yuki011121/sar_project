@@ -2,6 +2,26 @@
 
 **ClueMeisterAgent** is an intelligent Search and Rescue (SAR) assistant designed to analyze and prioritize clues during missions. It provides automated clue processing, pattern recognition, and similarity analysis to help SAR teams efficiently identify relevant clues.
 
+### **Changes in ClueMeisterAgent**  
+
+This update improves the functionality of `ClueMeisterAgent` by optimizing three key functions:  
+
+1. **`analyze_patterns`**  
+   - Added **lemmatization** to normalize words (e.g., "shouting" → "shout").  
+   - Removed **common stopwords** (e.g., "the", "in", "near") for better keyword extraction.  
+   - Filtered **non-alphabetic characters** and ignored words with fewer than three letters.  
+
+2. **`calculate_priority`**  
+   - Improved **error handling** when retrieving priority from Google Gemini API.  
+   - Used **regular expressions** to safely extract numeric values.  
+   - Enforced **priority range (0-10)** and set a **default fallback value (5)**.  
+
+3. **`find_related_clues`**  
+   - Enhanced **TF-IDF similarity calculation** by adding **bigram support (`ngram_range=(1,2)`)**.  
+   - Introduced a **minimum similarity threshold (0.2)** to filter out weak matches. 
+
+
+
 ---
 
 ## Features
